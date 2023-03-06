@@ -13,7 +13,6 @@ body {
 ul {
     display: flex;
     list-style-type: none;
-    margin-left: 20px;
     justify-content: end;
 }
 
@@ -67,12 +66,10 @@ a:hover {
 }
 
 .container {
-    padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .container-sobre {
@@ -104,19 +101,22 @@ button:hover {
     border-color: blueviolet;
 }
 
-@media (min-width:375px) and (max-width:425px) {
-    ul {
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    .container h1 {
-        display: none;
-    }
-
+@media (min-width:375px) and (max-width:426px) {
     strong {
         color: blueviolet;
         font-size: 30px;
+    }
+
+    .container {
+    width: 100%;
+    max-width: 250;
+    display: flex;
+    justify-content: start;
+    margin-left: -51px;
+    }
+
+    .name {
+        display: none;
     }
 
     .sobre h2 {
@@ -127,5 +127,10 @@ button:hover {
     .color2 {
         color: #ffff00;
         font-size: 20px;
+    }
+    .container1 {
+        display: flex;
+        justify-content: center;
+        
     }
 }
