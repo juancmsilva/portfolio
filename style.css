@@ -73,10 +73,10 @@ a:hover {
 }
 
 .container-sobre {
-    height: 70vh;
     display: flex;
     justify-content: start;
-    align-items: center;
+    flex-direction:column;
+    align-items: start;
 }
 
 .sobre {
@@ -102,13 +102,12 @@ button:hover {
 }
 
 @media (min-width:375px) and (max-width:426px) {
+    
     strong {
         color: blueviolet;
         font-size: 30px;
     }
-     .sobre {
-    height: 0px;
-    }
+    
 
     .container {
     width: 100%;
