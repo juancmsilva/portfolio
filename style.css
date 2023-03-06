@@ -7,16 +7,13 @@
 body {
     background-color: black;
     color: white;
-    margin-left: 40px;
+    margin: 40px;
 }
 
-ul {
+ul, li{
     display: flex;
     list-style-type: none;
     justify-content: end;
-}
-
-li {
     padding: 10px;
     font-size: 20px;
 }
@@ -25,10 +22,6 @@ a {
     color: white;
     text-decoration: none;
     transition: .5s;
-}
-
-img {
-    height: 300px;
 }
 
 strong {
@@ -46,14 +39,20 @@ button {
     transition: .5s;
 }
 
-.container1 {
-    height: 100vh;
+.container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container h1 {
     font-size: 35px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
 }
 
 a:hover {
@@ -65,22 +64,16 @@ a:hover {
     font-size: 20px;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .container-sobre {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: start;
     align-items: start;
+    margin-top: 100px;
 }
 
 .sobre {
-    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,30 +84,27 @@ a:hover {
     text-align: justify;
 }
 
-.image {
-    display: flex;
-    flex-direction: row;
-}
-
 button:hover {
     cursor: pointer;
     border-color: blueviolet;
 }
 
 @media (min-width:375px) and (max-width:426px) {
-    
+  
+    body {
+    margin-top: 0px;
+   }
     strong {
         color: blueviolet;
         font-size: 30px;
     }
-    
 
     .container {
     width: 100%;
     max-width: 250;
     display: flex;
     justify-content: start;
-    margin-left: -51px;
+    margin-left: -20px;
     }
 
     .name {
