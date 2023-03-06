@@ -90,9 +90,9 @@ button:hover {
 }
 
 @media (min-width:375px) and (max-width:426px) {
-  
+
     body {
-    margin-top: 0px;
+    margin: 0px;
    }
     strong {
         color: blueviolet;
