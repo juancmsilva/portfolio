@@ -74,8 +74,8 @@ a:hover {
 
 .container-sobre {
     display: flex;
-    justify-content: start;
     flex-direction:column;
+    justify-content: start;
     align-items: start;
 }
 
