@@ -161,7 +161,6 @@ button:hover {
     }
 
     #container2 {
-        margin-top: 50vh;
         height: 100%;
         display: flex;
         flex-direction: column;
