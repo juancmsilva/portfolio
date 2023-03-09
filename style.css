@@ -7,7 +7,8 @@
 body {
     background-color: black;
     color: white;
-    margin: 40px;
+    margin-left: 40px;
+    margin-right: 5%;
 }
 
 ul, li{
@@ -39,20 +40,30 @@ button {
     transition: .5s;
 }
 
-.container {
+img {
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid blueviolet;
+}
+
+#container1 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.container-head {
+    height: 60px;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    width: 95%;
 }
 
 .container h1 {
     font-size: 35px;
-}
-
-.container1 {
-    display: flex;
-    flex-direction: column;
 }
 
 a:hover {
@@ -64,13 +75,12 @@ a:hover {
     font-size: 20px;
 }
 
-
 .container-sobre {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    margin-top: 100px;
+    margin-top: 40%;
 }
 
 .sobre {
@@ -89,25 +99,47 @@ button:hover {
     border-color: blueviolet;
 }
 
+#container2 {
+    margin-top: 50%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    background-color: #181818;
+    align-items: center;
+}
+
+.sobre2 {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
 @media (min-width:375px) and (max-width:426px) {
     body {
-    margin: 20px 0px 0px 20px;
+    margin-left: 20px;
+
    }
-   
+
     strong {
         color: blueviolet;
         font-size: 30px;
     }
 
-    .container {
+    img {
+        height: 200px;
+    }
+
+    .container-head {
+    height: 60px;
     width: 100%;
     max-width: 250;
     display: flex;
     justify-content: start;
     margin-left: -40px;
     }
+
     .container-sobre {
-        width: 300px;
+    width: 300px;
+    margin-top: 40%;
     }
 
     .name {
@@ -123,9 +155,19 @@ button:hover {
         color: #ffff00;
         font-size: 20px;
     }
-    .container1 {
+    #container1 {
         display: flex;
         justify-content: center;
-        
     }
+
+    #container2 {
+        margin-top: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #181818;
+    }
+
+    
 }
