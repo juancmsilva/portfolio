@@ -242,7 +242,7 @@ footer li {
 
     .skills {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .skills img {
