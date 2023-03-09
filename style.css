@@ -11,7 +11,8 @@ body {
     margin-right: 5%;
 }
 
-.navegation ul, li{
+.navegation ul,
+li {
     display: flex;
     list-style-type: none;
     justify-content: end;
@@ -118,15 +119,19 @@ button:hover {
     margin: 20px;
     width: 90%;
 }
+
 #container3 {
     height: 70vh;
 }
 
-.container-proj{
+.container-proj {
     display: flex;
     flex-wrap: wrap;
 }
-.skils {
+
+
+
+.skills {
     display: flex;
     flex-direction: row;
 }
@@ -138,7 +143,7 @@ button:hover {
 }
 
 .item {
-   padding: 100px;
+    padding: 100px;
     background-color: blue;
     margin-top: 50px;
     margin-right: 10px;
@@ -148,7 +153,6 @@ button:hover {
     display: flex;
     flex-direction: column;
 }
-
 
 
 footer li {
@@ -162,8 +166,8 @@ footer li {
 
 @media (min-width:375px) and (max-width:426px) {
     body {
-    margin-left: 20px;
-   }
+        margin-left: 20px;
+    }
 
     strong {
         color: blueviolet;
@@ -178,18 +182,19 @@ footer li {
         display: flex;
         height: 100vh;
     }
+
     .container-head {
-    height: 60px;
-    width: 100%;
-    max-width: 250;
-    display: flex;
-    justify-content: start;
-    margin-left: -40px;
+        height: 60px;
+        width: 100%;
+        max-width: 250;
+        display: flex;
+        justify-content: start;
+        margin-left: -40px;
     }
 
     .container-sobre {
-    width: 300px;
-    margin-top: 30vh;
+        width: 300px;
+        margin-top: 30vh;
     }
 
     .name {
@@ -205,11 +210,11 @@ footer li {
         color: #ffff00;
         font-size: 20px;
     }
-    
+
     #container2 {
         display: flex;
         flex-direction: column;
-        height: 80vh;
+        height: 100vh;
     }
 
     .container-sobre2 {
@@ -220,13 +225,29 @@ footer li {
     }
 
     #container3 {
-        height: 90vh;
+        height: 100vh;
     }
 
     .item {
         padding: 50px;
-         background-color: blue;
-         margin-top: 50px;
-         margin-right: 10px;
-     }
+        background-color: blue;
+        margin-top: 50px;
+        margin-right: 10px;
+    }
+
+    #container4 {
+        margin-top: 120px;
+        text-align: center;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills img {
+        height: 100px;
+        border: 0;
+        border-radius: 0;
+    }
 }
